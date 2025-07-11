@@ -46,6 +46,7 @@
        (require 'init-rime)
        (require 'init-goggles)
        (require 'init-rainbow)
+       (require 'init-eee)
        ;; (require 'init-telega)
        ;; (require 'init-holo-layer)
        (require 'init-lsp)

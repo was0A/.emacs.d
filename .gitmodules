@@ -208,3 +208,6 @@
 [submodule "llama"]
 	path = site-lisp/extensions/llama
 	url = https://github.com/tarsius/llama
+[submodule "eee"]
+	path = site-lisp/extensions/eee
+	url = https://github.com/eval-exec/eee.el

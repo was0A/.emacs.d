@@ -283,4 +283,13 @@
  "insert-translated-name")
 
 
+;;; eee.el 对终端应用的集成
+(lazy-load-global-keys
+ '(("f" . ee-find)
+   ("r" . ee-rg)
+   ("b" . ee-btop))
+ "eee.el"
+ "C-c u")
+
+
 (provide 'init-key)

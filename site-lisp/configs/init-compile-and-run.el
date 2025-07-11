@@ -22,7 +22,7 @@
 		    (if status
 			(progn
 			  (delete-window)
-			  (kill-buffer "*compilation*")
+			  ;; (kill-buffer "*compilation*")
 			  (maple-run)))))))))
 
 (defun compile-and-run ()

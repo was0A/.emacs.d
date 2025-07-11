@@ -38,6 +38,8 @@
 (defalias 'scroll-up-command '+pixel-scroll-interpolate-down)
 (defalias 'scroll-down-command '+pixel-scroll-interpolate-up)
 
+(add-to-list 'default-frame-alist '(background-color . "black"))
+
 (fset 'yes-or-no-p 'y-or-n-p)                    ;; 以 y/n 代表 yes/no
 (global-subword-mode 1)                          ;; Word 移动支持 FooBar 的格式
 (delete-selection-mode 1)                        ;; 选择后再次输入视为替换
