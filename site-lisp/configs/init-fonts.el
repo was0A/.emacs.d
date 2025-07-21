@@ -6,13 +6,13 @@
   "Setup fonts."
   (when (display-graphic-p)
     ;; Set default font
-    (cl-loop for font in '("CaskaydiaCove Nerd Font Mono" "Fira Code" "Jetbrains Mono"
-                           "SF Mono" "Hack" "Source Code Pro" "Menlo"
+    (cl-loop for font in '("Source Code Pro" "CaskaydiaCove Nerd Font Mono" "Fira Code" "Jetbrains Mono"
+                           "SF Mono" "Hack" "Menlo"
                            "Monaco" "DejaVu Sans Mono" "Consolas")
              when (font-installed-p font)
              return (set-face-attribute 'default nil
                                         :family font
-                                        :height 130))
+                                        :height 115))
 
     ;; Set mode-line font
     ;; (cl-loop for font in '("Menlo" "SF Pro Display" "Helvetica")

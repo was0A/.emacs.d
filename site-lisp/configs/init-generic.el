@@ -1,4 +1,4 @@
- ;; 不要自动启用 package
+;; 不要自动启用 package
 (setq package-enable-at-startup nil
       package--init-file-ensured t)
 

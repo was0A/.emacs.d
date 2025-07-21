@@ -3,6 +3,17 @@
 (require 'dirvish-ls)
 (require 'dirvish-side)
 
+(with-eval-after-load 'dirvish
+  (setq dirvish-attributes
+        '(vc-state subtree-state nerd-icons collapse git-msg file-size)
+        dirvish-side-attributes
+        '(vc-state nerd-icons collapse git-msg file-size))
+  (setopt dirvish-subtree-state-style 'nerd)
+  (setq dirvish-mode-line-format '(:left (sort symlink) :right (vc-info yank index)))
+  (setq dirvish-side-width 38)
+  (setq dirvish-header-line-format '(:left (path) :right (free-space)))
+  (setq dirvish-path-separators (list "  " "  " "  ")))
+
 (setq dired-listing-switches
       "-l --almost-all --human-readable --group-directories-first --no-group")
 (setq dirvish-attributes

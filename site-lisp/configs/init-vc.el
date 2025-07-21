@@ -1,6 +1,7 @@
 (require 'transient)
 (require 'diff-hl)
 (require 'llama)
+(run-with-idle-timer 2 nil (lambda () (load "~/.emacs.d/site-lisp/extensions/transient/lisp/transient.el")))
 (autoload 'magit "magit" "Load magit." t)
 
 

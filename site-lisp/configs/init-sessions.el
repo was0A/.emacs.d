@@ -2,16 +2,19 @@
 (autoload 'auto-save-buffers "auto-save" "Save all buffers." t)
 
 
-(setq desktop-load-locked-desktop t
-      desktop-restore-frames t
-      enable-recursive-minibuffers t ; Allow commands in minibuffers
-      history-length 1000
-      savehist-additional-variables '(mark-ring
-                                      global-mark-ring
-                                      search-ring
-                                      regexp-search-ring
-                                      extended-command-history)
-      savehist-autosave-interval 300)
+;; save a list of open files in ~/.emacs.d/.emacs.desktop
+(setq-default desktop-auto-save-timeout 600
+	      desktop-load-locked-desktop t
+	      desktop-restore-frames t
+	      enable-recursive-minibuffers t ; Allow commands in minibuffers
+	      history-length 1000
+	      savehist-additional-variables '(extended-command-history
+					      file-name-history
+					      mark-ring
+					      global-mark-ring
+					      search-ring
+					      regexp-search-ring)
+	      savehist-autosave-interval 300)
 
 (savehist-mode t)
 (save-place-mode t)

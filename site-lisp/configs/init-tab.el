@@ -48,7 +48,7 @@
 				       'tab-bar-meow-motion-state
 				     'tab-bar-meow-keypad-state)))
                          :inverse t :margin 0 :radius 3
-                         :height 1 :ascent 16 :scale 1.1))
+                         :height 1 :ascent 13 :scale 1.1))
 	    "   L"
             l
 	    " C"
@@ -146,7 +146,7 @@
                                          'tab-bar-svg-active
                                        'tab-bar-svg-inactive)
                                :inverse t :margin 3 :radius 6 :padding padding
-                               :height 1 :ascent 16 :scale 1.1)))))))
+                               :height 1 :ascent 13 :scale 1.1)))))))
     items))
 
 (setq tab-bar-border nil

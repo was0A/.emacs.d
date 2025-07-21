@@ -127,6 +127,7 @@
      ("?"   . dirvish-dispatch)     ; contains most of sub-menus in dirvish extensions
      ("y"   . dirvish-yank-menu)
      ("s"   . dirvish-setup-menu)   ; `st' toggles mtime, `ss' toggles file size, etc.
+     ("h"   . dired-up-directory)
      ("M-f" . dirvish-file-info-menu)
      ("M-l" . dirvish-ls-switches-menu)
      ("M-m" . dirvish-mark-menu)
