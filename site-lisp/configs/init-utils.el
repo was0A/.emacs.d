@@ -15,7 +15,7 @@
 		     ;; 父目录、 语言相关和版本控制目录都移除
 		     (member subdir '("." ".."
 				      "dist" "node_modules" "__pycache__"
-				      "RCS" "CVS" "rcs" "cvs" ".git" ".github"))))
+				      "RCS" "CVS" "rcs" "cvs" ".git" ".github" "style"))))
 		(directory-files dir)))
 	(let ((subdir-path (concat dir (file-name-as-directory subdir))))
 	  ;; 目录下有 .el .so .dll 文件的路径才添加到 `load-path' 中，提升 Emacs 启动速度

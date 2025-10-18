@@ -18,3 +18,4 @@ places
 /blink-search/
 /.ccls-cache/
 /site-lisp/configs/init-svg.el.bak
+/xenops/

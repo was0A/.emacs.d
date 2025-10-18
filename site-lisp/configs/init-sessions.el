@@ -8,9 +8,7 @@
 	      desktop-restore-frames t
 	      enable-recursive-minibuffers t ; Allow commands in minibuffers
 	      history-length 1000
-	      savehist-additional-variables '(extended-command-history
-					      file-name-history
-					      mark-ring
+	      savehist-additional-variables '(mark-ring
 					      global-mark-ring
 					      search-ring
 					      regexp-search-ring)

@@ -211,3 +211,24 @@
 [submodule "eee"]
 	path = site-lisp/extensions/eee
 	url = https://github.com/eval-exec/eee.el
+[submodule "symbol-overlay"]
+	path = site-lisp/extensions/symbol-overlay
+	url = https://github.com/roife/symbol-overlay
+[submodule "pangu-spacing"]
+	path = site-lisp/extensions/pangu-spacing
+	url = https://github.com/coldnew/pangu-spacing
+[submodule "org-modern"]
+	path = site-lisp/extensions/org-modern
+	url = https://github.com/minad/org-modern
+[submodule "xenops"]
+	path = site-lisp/extensions/xenops
+	url = https://github.com/dandavison/xenops
+[submodule "aio"]
+	path = site-lisp/extensions/aio
+	url = https://github.com/skeeto/emacs-aio
+[submodule "f"]
+	path = site-lisp/extensions/f
+	url = https://github.com/rejeep/f.el
+[submodule "auctex"]
+	path = site-lisp/extensions/auctex
+	url = https://github.com/emacs-straight/auctex

@@ -52,7 +52,7 @@
         ("M-p" . fingertip-jump-left)
         ("M-n" . fingertip-jump-right)
         ;; 符号插入
-        ("%" . fingertip-match-paren)            ;括号跳转
+        ;; ("%" . fingertip-match-paren)            ;括号跳转
         ("(" . fingertip-open-round)             ;智能 (
         ("[" . fingertip-open-bracket)           ;智能 [
         ("{" . fingertip-open-curly)             ;智能 {

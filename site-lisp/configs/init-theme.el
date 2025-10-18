@@ -6,6 +6,7 @@
 ;; (rand-theme)
 
 (load-theme 'kaolin-ocean t)
+;; (load-theme 'kaolin-light t)
 
 
 (provide 'init-theme)

@@ -2,6 +2,7 @@
 (require 'marginalia)
 (require 'orderless)
 (require 'vertico-posframe)
+(require 'vertico-sort)
 ;; (require 'corfu)
 ;; (require 'corfu-history)
 (autoload 'consult-grep "consult" "Load consult.el and call consult-grep." t)
@@ -18,6 +19,7 @@
 
 (setq completion-styles '(orderless basic)
       completion-category-overrides '((file (styles basic partial-completion)))
+      vertico-sort-function 'vertico-sort-history-length-alpha
       vertico-posframe-parameters
       '((left-fringe . 8)
         (right-fringe . 8))

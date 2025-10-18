@@ -108,6 +108,21 @@ and style elements ARGS."
   (with-memoization (gethash args svg-tag-cache)
     (apply orig args)))
 
+(defun svg-tag-todo-keywords-tag (tag face)
+  (let ((scale 1.0)
+        (tag (propertize tag 'face face)))
+    (when (org-at-heading-p)
+      (let* ((level (number-to-string (org-current-level)))
+             (face (intern (concat "org-level-" level)))
+             (height (face-attribute face :height)))
+        (setq scale (if (eq height 'unspecified) 1.0 height))))
+    (when text-scale-mode
+      (setq scale (* scale (expt text-scale-mode-amount))))
+    (svg-tag-make tag :face face
+                  :inverse t :margin 0
+                  :height 1.1 :ascent 16
+                  :scale scale)))
+
 (global-svg-tag-mode t)
 
 

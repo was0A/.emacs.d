@@ -47,7 +47,7 @@
 (setq display-line-numbers-type 'relative)       ;; 启用相对行号
 (global-hl-line-mode 1)                          ;; 高亮当前行
 (auto-compression-mode 1)                        ;; 打开压缩文件时自动解压缩
-(global-prettify-symbols-mode 1)                 ;; 将字符显示为奇特的符号
+;; (global-prettify-symbols-mode 1)                 ;; 将字符显示为奇特的符号
 (tool-bar-mode -1)                               ;; 关闭工具栏
 (menu-bar-mode -1)                               ;; 关闭菜单栏
 (scroll-bar-mode -1)                             ;; 关闭滚动条
@@ -119,6 +119,29 @@
 (setq-default mode-line-format nil)
 (set-face-attribute 'mode-line nil :height 1
 		    :background (face-background 'default))
+
+;; 自动折行
+(toggle-word-wrap 1)
+(toggle-truncate-lines -1)
+
+;; 更漂亮的符号
+(setq prettify-symbols-alist
+                      '(("lambda"  . ?λ)
+                        (":PROPERTIES:" . ?)
+                        (":ID:" . ?)
+                        (":END:" . ?)
+                        ("#+TITLE:" . ?)
+                        ("#+AUTHOR" . ?)
+                        ("#+BEGIN_QUOTE" . ?)
+                        ("#+END_QUOTE" . ?)
+                        ("#+RESULTS:" . ?)
+                        ("[ ]" . ?)
+                        ("[-]" . ?)
+                        ("[X]" . ?)
+                        ("[#A]" . ?🅐)
+                        ("[#B]" . ?🅑)
+                        ("[#C]" . ?🅒)))
+(prettify-symbols-mode)
 
 
 (provide 'init-generic)
