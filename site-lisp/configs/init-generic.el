@@ -62,6 +62,8 @@
 (setq completion-cycle-threshold 3)              ;; 在候选项极少的情况下运行tab选择
 (setq tab-always-indent 'complete)               ;; 整合 indentation 与 completion
 (setq inhibit-startup-screen t)                  ;; 关闭开始界面
+(setq load-suffixes '(".elc" ".el"))             ;; to avoid searching .so/.dll
+(setq load-file-rep-suffixes '(""))              ;; to avoid searching *.gz
 (setq void-text-area-pointer nil)	         ;; 禁止显示鼠标指针
 (setq initial-scratch-message
       ";; Happy hacking, Emacs ❤ you!\n\n")      ;; 设置 *scratch* 注释的内容
